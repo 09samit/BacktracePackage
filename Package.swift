@@ -11,11 +11,10 @@ let package = Package(
             name: "BacktracePackage",
             targets: ["Backtrace"]),
     ],
-    dependencies: [
-            // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/09samit/BacktraceCrashReporter.git", from: "1.0.0")
-        ],
     targets: [
+        .binaryTarget(
+            name: "Backtrace_PLCrashReporter",
+            path: "./Sources/Backtrace_PLCrashReporter.xcframework"),
         .binaryTarget(
             name: "Backtrace",
             path: "./Sources/Backtrace.xcframework"),
