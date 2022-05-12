@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "BacktracePackage",
-            targets: ["BacktracePackage"]),
+            targets: ["Backtrace"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,8 +21,5 @@ let package = Package(
         .binaryTarget(
             name: "Backtrace",
             path: "./Sources/Backtrace.xcframework"),
-        .target(
-            name: "BacktracePackage",
-            dependencies: []),
     ]
 )
