@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "BacktracePackage",
-            targets: ["Backtrace"]),
+            targets: ["Backtrace", "Backtrace_PLCrashReporter"]),
     ],
     targets: [
         .binaryTarget(
